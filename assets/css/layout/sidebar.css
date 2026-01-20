@@ -1,0 +1,185 @@
+.sidebar {
+    width: fit-content;
+    background-color: var(--layout-bg);
+    height: var(--header-height);
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sidebar .input-menu {
+    display: none;
+}
+
+.sidebar .dashboard-menu {
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .dashboard-menu i {
+    color: var(--icon-color);
+    font-size: 2rem;
+}
+
+.sidebar-logo {
+    align-items: center;
+    column-gap: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    /* padding-left: 20px; */
+    display: none;
+
+}
+
+.sidebar .input-menu:checked~.sidebar-logo {
+    display: flex;
+}
+
+.sidebar:has(.input-menu:checked) {
+    width: var(--sidebar-width);
+}
+
+.sidebar .input-menu:checked~.sidebar-content {
+    display: inline-block;
+}
+
+.sidebar-logo h2 {
+    color: var(--text-white);
+}
+
+.sidebar-logo i {
+    font-size: 1.3rem;
+    color: var(--icon-color);
+}
+
+.sidebar .sidebar-content {
+    position: absolute;
+    background-color: var(--layout-bg);
+    width: 100%;
+    top: 100%;
+    display: none;
+    min-height: calc(100vh - 70px);
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.sidebar-nav li a,
+.sidebar-nav li i {
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.sidebar-nav li::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: var(--icon-color);
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.sidebar-nav li i {
+    margin-right: 5px;
+}
+
+.sidebar-nav li.active a,
+.sidebar-nav li:hover a {
+    color: var(--text-white);
+}
+
+.sidebar-nav li.active i,
+.sidebar-nav li:hover i {
+    color: var(--icon-color);
+}
+
+.sidebar-nav li:hover::before,
+.sidebar-nav li.active::before {
+    display: inline-block;
+}
+
+.sidebar-nav li:hover,
+.sidebar-nav li.active {
+    background-color: var(--hover-overlay);
+}
+
+.sidebar-league .check-chevron,
+.sidebar-clubs .club-input {
+    display: none;
+}
+
+.sidebar-league .section-title,
+.sidebar-clubs .section-title {
+    display: inline-block;
+    padding: 12px 20px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.sidebar-league .section-title i,
+.sidebar-clubs .section-title i {
+    margin-left: 5px;
+}
+
+.sidebar-league .check-chevron:checked+label i,
+.sidebar-clubs .club-input:checked+label i {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.sidebar-league .check-chevron:checked~.league-list,
+.sidebar-clubs .club-input:checked~.favorite-clubs {
+    display: block;
+}
+
+.sidebar-league .league-list,
+.sidebar-clubs .favorite-clubs {
+    overflow-y: auto;
+    max-height: 180px;
+    scrollbar-width: none;
+    list-style: none;
+    display: none;
+    margin: 0;
+}
+
+.sidebar-league .league-list li,
+.sidebar-clubs .favorite-clubs .club {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 100%;
+    color: var(--text-white);
+    font-size: 0.9rem;
+}
+
+.sidebar-league .league-list li .box-img,
+.sidebar-clubs .favorite-clubs .box-img {
+    width: 20px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.sidebar-clubs .favorite-clubs .club i {
+    margin-left: auto;
+    font-size: 1rem;
+    color: var(--icon-color);
+
+}

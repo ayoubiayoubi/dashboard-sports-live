@@ -1,0 +1,241 @@
+.header {
+    height: var(--header-height);
+    background-color: var(--layout-bg);
+    display: flex;
+    align-items: center;
+    padding: 0 20px 0px 88px;
+    justify-content: space-between;
+}
+
+header .sports-categories {
+    /* width: 45%; */
+    height: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    cursor: pointer;
+    column-gap: 20px;
+}
+
+header .sports-categories .categorie {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+header .sports-categories .categorie a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+header .sports-categories .categorie i {
+    display: none;
+}
+
+header .sports-categories .categorie.active,
+header .sports-categories .categorie:hover {
+    color: var(--icon-color);
+    border-bottom: 3px solid var(--icon-color);
+}
+
+header .sports-categories .categorie.active a,
+header .sports-categories .categorie:hover a {
+    /* display: inline-block; */
+    color: var(--icon-color);
+}
+
+/* header .sports-categories .categorie i {
+    font-size: 1.3rem;
+} */
+
+header .box-searche {
+    /* width: 20%; */
+    position: relative;
+}
+
+header .box-searche i {
+    position: absolute;
+    left: 9px;
+    top: 8px;
+    font-size: 1.2rem;
+}
+
+header .box-searche input {
+    width: 100%;
+    padding: 10px 0px 10px 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #2e3135;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+header .user-actions {
+    /* width: 20%; */
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: end;
+    cursor: pointer;
+}
+
+header .user-actions .notification {
+    position: relative;
+}
+
+header .user-actions .notification i {
+    font-size: 1.5rem;
+}
+
+header .user-actions .notification-sign {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: var(--icon-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 12px;
+    top: -1px;
+}
+
+header .user-actions .porfile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    background-color: pink;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header .sports-categories {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+header .sports-categories .categorie {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    height: 100%;
+}
+
+header .sports-categories .categorie a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+header .sports-categories .categorie.active,
+header .sports-categories .categorie:hover {
+    color: var(--icon-color);
+    border-bottom: 3px solid var(--icon-color);
+}
+
+header .sports-categories .categorie:hover a,
+header .sports-categories .categorie.active a {
+    color: var(--icon-color);
+}
+
+
+
+header .sports-categories .categorie i {
+    font-size: 1.3rem;
+}
+
+header .box-searche {
+    width: 20%;
+    position: relative;
+}
+
+header .box-searche i {
+    position: absolute;
+    left: 9px;
+    top: 8px;
+    font-size: 1.2rem;
+}
+
+header .box-searche input {
+    width: 100%;
+    padding: 10px 0px 10px 35px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #2e3135;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+
+
+header .user-actions {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    justify-content: end;
+    cursor: pointer;
+}
+
+header .user-actions .notification {
+    position: relative;
+}
+
+header .user-actions .notification i {
+    font-size: 1.5rem;
+}
+
+header .user-actions .notification-sign {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: var(--icon-color);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    left: 12px;
+    top: -1px;
+}
+
+header .user-actions .porfile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    background-color: pink;
+} */

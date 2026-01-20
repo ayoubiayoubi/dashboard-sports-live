@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Admin Dashboard</title>
+</head>
+
+<body>
+
+    <!-- ===== DASHBOARD WRAPPER ===== -->
+    <div class="dashboard">
+        <!-- START SIDEBAR -->
+        <aside class="sidebar">
+            <input name="menu" type="checkbox" name="" id="menu" class="input-menu">
+            <label class="dashboard-menu" for="menu">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <div class="sidebar-logo">
+                <i class="fa-regular fa-futbol"></i>
+                <h2>sportstream</h2>
+            </div>
+            <div class="sidebar-content">
+                <nav class="sidebar-nav">
+                    <ul>
+                        <li class="active">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <a href="">dashboard</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-tower-broadcast"></i>
+                            <a href="">live now</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bolt"></i>
+                            <a href="">highlights</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-bookmark"></i>
+                            <a href="">bookmarks</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-newspaper"></i>
+                            <a href="">news</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-gear"></i>
+                            <a href="">settings</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="sidebar-league">
+                    <input class="check-chevron" id="check-chevron" type="checkbox">
+                    <label for="check-chevron">
+                        <span class="section-title">
+                            football leagues
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </span>
+                    </label>
+                    <ul class="league-list">
+                        <li>
+                            <div class="box-img">
+                                <img src="assets/images/leagues/champions-league.png" alt="">
+                            </div>
+                            chompions league
+                        </li>
+                        <li>
+                            <div class="box-img">
+                                <img src="assets/images/leagues/premier-league (Edited).png" alt="">
+                            </div>
+                            Premier League
+                        </li>
+                        <li>
+                            <div class="box-img">
+                                <img src="assets/images/leagues/la-liga-removebg-preview.png" alt="">
+                            </div>
+                            la liga
+                        </li>
+                        <li>
+                            <div class="box-img">
+                                <img src="assets/images/leagues/ligue-1.png" alt="">
+                            </div>
+                            liga 1
+                        </li>
+                        <li>
+                            <div class="box-img">
+                                <img src="assets/images/leagues/ serie-a.png" alt="">
+                            </div>
+                            Serie A
+                        </li>
+                        <li>
+                            <div class="box-img">
+                                <img src="assets/images/leagues/bundesliga.png" alt="">
+                            </div>
+                            Bundesliga
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="sidebar-clubs">
+                    <input class="club-input" id="club-input" type="checkbox">
+                    <label for="club-input">
+                        <span class="section-title">
+                            favorite clubs
+                            <i class="fa-solid fa-chevron-right"></i>
+
+                        </span>
+                    </label>
+                    <div class="favorite-clubs">
+                        <div class="club">
+                            <div class="box-img">
+                                <img src="assets/images/clubs/barcelona-1.png" alt="">
+                            </div>
+                            <span class="club-name">Barcelona</span>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="club">
+                            <div class="box-img">
+                                <img src="assets/images/clubs/real-madrid-2.png" alt="">
+                            </div>
+                            <span class="club-name">Real Madrid</span>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="club">
+                            <div class="box-img">
+                                <img src="assets/images/clubs/juventus.png" alt="">
+                            </div>
+                            <span class="club-name">juventus</span>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="club">
+                            <div class="box-img">
+                                <img src="assets/images/clubs/manchester-united.png" alt="">
+                            </div>
+                            <span class="club-name">manchester-united</span>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="club">
+                            <div class="box-img">
+                                <img src="assets/images/clubs/FC_Liverpool.png" alt="">
+                            </div>
+                            <span class="club-name">liverpool</span>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                        <div class="club">
+                            <div class="box-img">
+                                <img src="assets/images/clubs/FC_Bayern_Munich_5.png" alt="">
+                            </div>
+                            <span class="club-name">FC Bayern Munich</span>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                </div>
+        </aside>
+        <!-- END SIDEBAR -->
+
+        <!-- MAIN AREA -->
+        <div class="main">
+            <!-- START HEADER -->
+            <header class="header">
+                <div class="sports-categories">
+                    <div class="categorie active">
+                        <i class="fa-regular fa-futbol"></i>
+                        <a href="">footballs</a>
+                    </div>
+                    <div class="categorie ">
+                        <i class="fa-solid fa-basketball"></i>
+                        <a href="">basketball</a>
+                    </div>
+                    <div class="categorie ">
+                        <i class="fa-solid fa-baseball"></i>
+                        <a href="">baseball</a>
+                    </div>
+                    <div class="categorie ">
+                        <i class="fa-solid fa-table-tennis-paddle-ball tennis-icon"></i>
+                        <a href="">tennis</a>
+                    </div>
+                    <div class="categorie ">
+                        <i class="fa-solid fa-volleyball"></i>
+                        <a href="">volleyball</a>
+                    </div>
+                </div>
+                <div class="box-searche">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="search" placeholder="Search games,teams,players ">
+                </div>
+                <div class="user-actions">
+                    <div class="notification">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="notification-sign"></span>
+                    </div>
+                    <div class="porfile">
+                        <img src="assets/images/users/user.png" alt="">
+                    </div>
+                </div>
+            </header>
+            <!-- END HEADER -->
+            <!-- START MAIN CONTENT -->
+            <main class="content">
+                <div class="fixtures">
+                    <div class="bg-t-match">
+                        <div class="info-match">
+                            <h2>barcelona <span>VS</span> real madrid</h2>
+                            <p>premier league 2026/27</p>
+                            <p>18 april 2026 -15:00 (MA)</p>
+                            <p>stadium camp nou</p>
+                            <button class="watch-now">watch now</button>
+                        </div>
+                    </div>
+                    <div class="match-schedule">
+                        <div class="schedule-header">
+                            <div class="col all">all</div>
+                            <div class="col active">live</div>
+                            <div class="col">upcoming</div>
+                            <div class="col">finished</div>
+                            <div class="col">bookmarks</div>
+                            <div class="col">times</div>
+                        </div>
+
+                        <div class="schedule-content">
+                            <div class="live">
+                                <div class="team">
+                                    <div class="rank">1.</div>
+                                    <div class="team-one">
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/barcelona-1.png" alt="">
+                                        </div>
+                                        <span class="name-team">
+                                            barcelona
+                                        </span>
+                                    </div>
+                                    <div class="result">
+                                        <span class="one">2</span>
+                                        <span class="">-</span>
+                                        <span class="tow">1</span>
+                                    </div>
+                                    <div class="team-two">
+
+                                        <span class="name-team">
+                                            real madrid
+                                        </span>
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/real-madrid-2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="match-minute">12'</div>
+                                    <div class="match-actions">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                </div>
+
+                                <div class="team lite">
+                                    <div class="rank">2.</div>
+                                    <div class="team-one">
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/manchester-united.png" alt="">
+                                        </div>
+                                        <span class="name-team">
+                                            manchester uited
+                                        </span>
+                                    </div>
+                                    <div class="result">
+                                        <span class="one">3</span>
+                                        <span class="">-</span>
+                                        <span class="tow">2</span>
+                                    </div>
+                                    <div class="team-two">
+
+                                        <span class="name-team">
+                                            chelsea FC
+                                        </span>
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/chelsea -FC.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="match-minute">12'</div>
+                                    <div class="match-actions">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                </div>
+
+                                <div class="team">
+                                    <div class="rank">3.</div>
+                                    <div class="team-one">
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/tottenham.png" alt="">
+                                        </div>
+                                        <span class="name-team">
+                                            tottenham
+                                        </span>
+                                    </div>
+                                    <div class="result">
+                                        <span class="one">2</span>
+                                        <span class="">-</span>
+                                        <span class="tow">1</span>
+                                    </div>
+                                    <div class="team-two">
+
+                                        <span class="name-team">
+                                            southampton
+                                        </span>
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/southampton.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="match-minute">12'</div>
+                                    <div class="match-actions">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="team">
+                                    <div class="rank">4.</div>
+                                    <div class="team-one">
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/asston-villa.png" alt="">
+                                        </div>
+                                        <span class="name-team">
+                                            asston-villa
+                                        </span>
+                                    </div>
+                                    <div class="result">
+                                        <span class="one">2</span>
+                                        <span class="">-</span>
+                                        <span class="tow">1</span>
+                                    </div>
+                                    <div class="team-two">
+
+                                        <span class="name-team">
+                                            liverpool
+                                        </span>
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/liverpool.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="match-minute">12'</div>
+                                    <div class="match-actions">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="team">
+                                    <div class="rank">5.</div>
+                                    <div class="team-one">
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/arsenal.png" alt="">
+                                        </div>
+                                        <span class="name-team">
+                                            arsenal
+                                        </span>
+                                    </div>
+                                    <div class="result">
+                                        <span class="one">2</span>
+                                        <span class="">-</span>
+                                        <span class="tow">1</span>
+                                    </div>
+                                    <div class="team-two">
+
+                                        <span class="name-team">
+                                            watford
+                                        </span>
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/watford.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="match-minute">12'</div>
+                                    <div class="match-actions">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="team">
+                                    <div class="rank">6.</div>
+                                    <div class="team-one">
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/juventus.png" alt="">
+                                        </div>
+                                        <span class="name-team">
+                                            juventus
+                                        </span>
+                                    </div>
+                                    <div class="result">
+                                        <span class="one">2</span>
+                                        <span class="">-</span>
+                                        <span class="tow">1</span>
+                                    </div>
+                                    <div class="team-two">
+
+                                        <span class="name-team">
+                                            manchester-sity
+                                        </span>
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/manchester-sity.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="match-minute">12'</div>
+                                    <div class="match-actions">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="team">
+                                    <div class="rank">7.</div>
+                                    <div class="team-one">
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/FC_Bayern_Munich_5.png" alt="">
+                                        </div>
+                                        <span class="name-team">
+                                            FC-Bayern
+                                        </span>
+                                    </div>
+                                    <div class="result">
+                                        <span class="one">2</span>
+                                        <span class="">-</span>
+                                        <span class="tow">1</span>
+                                    </div>
+                                    <div class="team-two">
+
+                                        <span class="name-team">
+                                            leicester-city
+                                        </span>
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/leicester-city.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="match-minute">12'</div>
+                                    <div class="match-actions">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="team">
+                                    <div class="rank">8.</div>
+                                    <div class="team-one">
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/atletico-madrid.png" alt="">
+                                        </div>
+                                        <span class="name-team">
+                                            atletico-madrid
+                                        </span>
+                                    </div>
+                                    <div class="result">
+                                        <span class="one">2</span>
+                                        <span class="">-</span>
+                                        <span class="tow">1</span>
+                                    </div>
+                                    <div class="team-two">
+
+                                        <span class="name-team">
+                                            inter-milan
+                                        </span>
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/inter-milan.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="match-minute">12'</div>
+                                    <div class="match-actions">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="team">
+                                    <div class="rank">9.</div>
+                                    <div class="team-one">
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/barcelona-1.png" alt="">
+                                        </div>
+                                        <span class="name-team">
+                                            barcelona
+                                        </span>
+                                    </div>
+                                    <div class="result">
+                                        <span class="one">2</span>
+                                        <span class="">-</span>
+                                        <span class="tow">1</span>
+                                    </div>
+                                    <div class="team-two">
+
+                                        <span class="name-team">
+                                            asston-villa
+                                        </span>
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/asston-villa.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="match-minute">12'</div>
+                                    <div class="match-actions">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                </div>
+                                <div class="team">
+                                    <div class="rank">10.</div>
+                                    <div class="team-one">
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/FC_Liverpool.png" alt="">
+                                        </div>
+                                        <span class="name-team">
+                                            liverpool
+                                        </span>
+                                    </div>
+                                    <div class="result">
+                                        <span class="one">2</span>
+                                        <span class="">-</span>
+                                        <span class="tow">1</span>
+                                    </div>
+                                    <div class="team-two">
+
+                                        <span class="name-team">
+                                            juventus
+                                        </span>
+                                        <div class="img-team">
+                                            <img src="assets/images/clubs/juventus.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="match-minute">12'</div>
+                                    <div class="match-actions">
+                                        <i class="fa-solid fa-circle-info"></i>
+                                        <i class="fa-solid fa-bookmark"></i>
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hot-news-sidebar">
+                    hot news sidebar
+                </div>
+            </main>
+            <!-- END MAIN CONTENT -->
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

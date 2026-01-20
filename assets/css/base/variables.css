@@ -1,0 +1,16 @@
+:root {
+    --font-primary: 'Inter', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    /* --primary: rgb(181 95 28 / 30%); */
+    --hover-overlay: rgb(181 95 28 / 30%);
+    --layout-bg: #181818;
+    --text-white: #fff;
+    --text-secondary: #777777;
+    --bg: #f4f6f8;
+    --card-bg: #ffffff;
+    --text-color: #1f2937;
+    --icon-color: #f67110;
+    --header-height: 70px;
+    --sidebar-width: 240px;
+    --radius: 12px;
+}
