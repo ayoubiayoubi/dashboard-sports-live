@@ -195,6 +195,7 @@
     -o-border-radius: 10px;
     display: none;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .hot-news-sidebar .latest-news,
