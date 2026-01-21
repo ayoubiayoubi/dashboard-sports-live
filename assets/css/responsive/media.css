@@ -83,7 +83,8 @@
 
     /* Start Main */
     .hot-news-sidebar {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
     }
 
     .content .fixtures .bg-t-match .info-match .watch-now {
@@ -109,6 +110,7 @@
     /* Start Main */
     .hot-news-sidebar {
         width: 350px;
+
     }
 
     /* End Main */
