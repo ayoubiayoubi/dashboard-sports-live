@@ -38,10 +38,6 @@
     /* End Main */
 }
 
-/* lg - Large */
-@media (min-width: 992px) {}
-
-
 /* Large Screens */
 @media (min-width:1200px) {
 
@@ -85,6 +81,7 @@
     .hot-news-sidebar {
         display: flex;
         flex-direction: column;
+        row-gap: 10px;
     }
 
     .content .fixtures .bg-t-match .info-match .watch-now {
